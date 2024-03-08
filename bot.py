@@ -12,7 +12,7 @@ TG_TOKEN = os.getenv("PRICEBOT_TOKEN")
 POOL = "EQA7xusA4i7BBlj65FiswpLbbhkiRFmQGyuhf4zpObzY09Ir" # TODO
 CHAT = "-1002088821264"
 
-INTERVAL = 250
+INTERVAL = 150
 
 bot = telebot.TeleBot(TG_TOKEN)
 
@@ -38,8 +38,8 @@ def main():
         resp += f"24H: {round(price_change_percentage_h24, 2)}\n\n"
 
         resp += f"Volumes:\n"
-        resp += f"1H: {round(volume_h1, 2)}\n"
-        resp += f"24H: {round(volume_h24, 2)}\n"
+        resp += f"1H: ${round(volume_h1, 2)}\n"
+        resp += f"24H: ${round(volume_h24, 2)}\n"
 
         markup = InlineKeyboardMarkup()
         markup.add(InlineKeyboardButton("Geckoterminal", url=GT_URL)) # TODO
