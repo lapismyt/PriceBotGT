@@ -2,7 +2,7 @@ import os
 from geckoterminal_api import GeckoTerminalAPI
 import time
 import telebot
-from telebot.types import InlineKeyboardMarkup, KeyboardButton
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import threading
 
 gt = GeckoTerminalAPI()
@@ -42,10 +42,10 @@ def main():
         resp += f"24H: {round(volume_h24, 2)}\n"
 
         markup = InlineKeyboardMarkup()
-        markup.add(KeyboardButton("Geckoterminal", url=GT_URL)) # TODO
-        markup.add(KeyboardButton("STON.fi", url=STONFI_URL)) # TODO
+        markup.add(InlineKeyboardButton("Geckoterminal", url=GT_URL)) # TODO
+        markup.add(InlineKeyboardButton("STON.fi", url=STONFI_URL)) # TODO
 
-        bot.send_message(CHAT, resp)
+        bot.send_message(CHAT, resp, reply_markup=markup)
 
 if __name__ == "__main__":
     main()
