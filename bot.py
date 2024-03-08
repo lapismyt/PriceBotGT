@@ -12,7 +12,7 @@ TG_TOKEN = os.getenv("PRICEBOT_TOKEN")
 POOL = "EQA7xusA4i7BBlj65FiswpLbbhkiRFmQGyuhf4zpObzY09Ir" # TODO
 CHAT = "-1002088821264"
 
-INTERVAL = 150
+INTERVAL = 3600
 
 bot = telebot.TeleBot(TG_TOKEN)
 
