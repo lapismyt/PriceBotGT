@@ -10,7 +10,7 @@ gt = GeckoTerminalAPI()
 TG_TOKEN = os.getenv("PRICEBOT_TOKEN")
 # POOL = os.getenv("PRICEBOT_POOL")
 POOL = "EQA7xusA4i7BBlj65FiswpLbbhkiRFmQGyuhf4zpObzY09Ir" # TODO
-CHAT = "-4151391692"
+CHAT = "-1002088821264"
 
 INTERVAL = 250
 
