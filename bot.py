@@ -46,6 +46,7 @@ def main():
         markup.add(InlineKeyboardButton("STON.fi", url=STONFI_URL)) # TODO
 
         bot.send_message(CHAT, resp, reply_markup=markup)
+        time.sleep(INTERVAL)
 
 if __name__ == "__main__":
     main()
